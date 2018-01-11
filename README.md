@@ -9,6 +9,8 @@ Applying Classification on the dataset of the users of a social network who saw 
 35|20000|0|
 26|43000|0|
 
+0 denotes that the user did not buy the SUV whereas 1 denotes that the user did bought the SUV
+
 
 ## K-Nearest Neighbour
 
