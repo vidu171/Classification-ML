@@ -33,4 +33,25 @@ The Wrong Predictions calculated using the Confusion Matrix after Fitting the cl
 #### Plot obtained 
 ![alt text](https://github.com/vidu171/Classification-ML/blob/master/K-NN/Figure_1.png "Graph with 0.01 resolution")
 
+##Kernal SVM
 
+Applying Kernal SVM on the given dataset
+
+#### Creating the Classifiation
+With The kernal as rbf and random_state = 0  and taking test set size as 0.25(using the random_state = 0)
+
+```python
+from sklearn.svm import SVC
+classifier = SVC(kernel = 'rbf', random_state = 0)
+classifier.fit(X_train, y_train)
+
+```
+#### Creating the Confusion matrix to Determine the success of the Classification
+```python
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+```
+The Wrong Predictions calculated using the Confusion Matrix after Fitting the classification model is 7
+
+#### Plot obtained 
+![alt text](https://github.com/vidu171/Classification-ML/blob/master/K-NN/Figure_1.png "Graph with 0.01 resolution")
